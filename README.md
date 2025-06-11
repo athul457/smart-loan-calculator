@@ -1,6 +1,6 @@
 # Smart Loan Calculator
 
-![Loan Calculator Preview](./images/loanImage.png)
+![Loan Calculator Preview](./src/images/loanImage.png)
 
 A responsive loan calculator that computes monthly payments, total payment, and total interest based on user inputs.
 
