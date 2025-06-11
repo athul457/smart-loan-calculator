@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="flex items-center justify-center w-full h-screen bg-gray-800">
+
+    <div class="w-[1000px] h-[550px]  border rounded-3xl ">
+      <div class="heading  text-center border-0 rounded-t-3xl bg-black  text-white p-3 ">
+        <h1 class="text-4xl font-bold">
+          Smart Loan Calculator
+        </h1>
+        <p class="text-lg mt-2">calculate your monthly payments and total interest easly</p>
+      </div>
+      <div class="container flex items-center justify-center bg-gray-400 h-[500px] rounded-b-3xl ">
+        <div class="loan-form basis-[50%] text-white flex items-center justify-center shadow-md shadow-gray-800 ml-2 rounded-2xl hover:bg-gray-500 transform ease-in-out duration-300">
+          <form action="" class="loan__form p-5  text-2xl ">
+            <label for="">Loan Amount $</label>
+            <input type="number" placeholder="loan amount" class="loan__amount block p-[10px] border-2 mt-2 mb-6 rounded-xl border-black" required>
+            <label for="" class="">Annual Interest Rate %</label>
+            <input type="number" placeholder="Annual Interest" class="loan__interest border-black block p-[10px] border-2 mt-2 mb-6 rounded-xl" required>
+            <label for="" class="">Loan Term (Years)</label>
+            <input type="number" placeholder="loan Years" class="loan__years block border-black p-[10px] border-2 mt-2 mb-6 rounded-xl" required>
+            <button class="calculate-btn border-0 w-[300px] h-[60px] rounded-2xl mt-3 bg-gray-900
+             hover:bg-gray-300 duration-500 transform ease-in-out hover:text-black hover:border-0">
+             calculate</button>
+          </form>
+        </div>
+        <div class="details-display basis-[50%] text-white  flex flex-col items-center justify-center gap-5  ">
+          <h1 class="font-bold text-2xl">Loan Summary</h1>
+          <div class="w-[300px] h-[70px] border-2 rounded-xl text-center">
+            <p class="text-md">Monthly payment</p>$ <span class="monthly__pay">0</span>
+          </div>
+          <div class="w-[300px] h-[70px] border-2 rounded-xl text-center">
+            <p>Total payment</p>$ <span class="total__pay">0</span>
+          </div>
+          <div class="w-[300px] h-[70px] border-2 rounded-xl text-center">
+            <p>Total Intrest</p>$ <span class="total__intrest">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
